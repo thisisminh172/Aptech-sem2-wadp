@@ -15,20 +15,19 @@ demo ham header(), chuyen huongtrang web
             <h2>PHP header() demo</h2>
             <hr>
             <?php
-             $date = gmdate("d M y");
-             $time = gmdate("H");
-             //chuyen chuoi thanh so
-             $intTime = intval($time);
-             echo "<p>Today is $date $time";
-             echo "<br>";
-             echo $intTime;
-             if($intTime > 7){
-                 echo "<p>It's sleeping time</p>";
-             }else{
-                 header("location: https://vnexpress.net/");
-             }
-             
-             
+                $date = gmdate("d M y");
+                $time = gmdate("H");
+                //chuyen chuoi thanh so
+                $intTime = intval($time);
+                echo "<p>Today is $date $time";
+                echo "<br>";
+                echo $intTime;
+                if ($intTime > 7) {
+                    echo "<p>It's sleeping time</p>";
+                } else {
+                    header("location: https://vnexpress.net/");
+                }
+
             ?>
         </div>
 
