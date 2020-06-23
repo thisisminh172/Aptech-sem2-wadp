@@ -1,0 +1,33 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+body,
+html {
+    height: 100%;
+    margin: 0;
+}
+
+div.container-fluid {
+    height: 100%;
+    background-color: rgb(63, 61, 86);
+    background-image: url('../images/launch_day.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right center;
+}
+
+div.row {
+    height: 100%;
+}
+
+div.login-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 500px;
+    height: 400px;
+    background: rgba(159, 150, 252, 0.363);
+}
