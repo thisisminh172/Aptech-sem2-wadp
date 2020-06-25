@@ -64,7 +64,8 @@
                         <input type="reset" class="btn btn-info" value="Reset">
                     </div>
                 </form>
-                <a href="L07_DB_MemberList.php">Go back to list</a>
+                <a href="L07_DB_MemberList.php">Go back to list</a><br>
+                <a href="change_password.php?id=<?php echo $row['username']; ?>">Change password</a>
             </div>
         </div>
 
