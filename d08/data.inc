@@ -1,6 +1,7 @@
 <?php
 class Product{
     public $id,$name,$price,$image,$quantity;
+    
 
     //ham dung
     public function __construct($ms,$ten,$gia,$hinh,$soluong){

@@ -7,6 +7,7 @@ if (isset($_POST['btnLogin'])) {
     $link = getConnect();
     $sql = "SELECT * FROM `tbUsers` WHERE `username` = '$username' AND `password`='$password'";
     $result = mysqli_query($link, $sql);
+    
     $row = mysqli_fetch_array($result);
     
     
