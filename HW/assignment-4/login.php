@@ -1,8 +1,10 @@
 <?php
+include_once '../../lib/lib.inc';
 session_start();
 if(isset($_POST['btnLogin'])){
-    $username = $_POST['txtUsername'];
-    $password = $_POST['txtPassword'];
+    $link = getConnect();
+    $username = mysqli_real_escape_string($link,$_POST['txtUsername']);
+    $password = mysqli_real_escape_string($link,$_POST['txtPassword']);
     if($username == 'airAD' && $password=='001100'){
         $_SESSION['is_login']=1;
         header('location: FlightControl.php');

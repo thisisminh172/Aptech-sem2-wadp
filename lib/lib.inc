@@ -7,7 +7,7 @@ function getConnect()
 	$host = "localhost:3308";
 	$uid = "root";
 	$pwd = "";
-	$db = "1910db";
+	$db = "1910.M1";
 
 	$cn = mysqli_connect($host, $uid, $pwd, $db);
 	if (!$cn) {
